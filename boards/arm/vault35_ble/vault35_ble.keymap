@@ -54,6 +54,14 @@
 	            quick-release;
 	            display-name = "Sticky Layer";
 		};
+		as: auto_shift {
+	            compatible = "zmk,behavior-hold-tap";
+	            #binding-cells = <2>;
+	            tapping_term_ms = <150>;
+	            quick_tap_ms = <0>;
+	            flavor = "tap-preferred";
+	            bindings = <&kp>, <&kp>;
+	        };
 	};
 };
 
@@ -64,18 +72,18 @@
 
         base {
             bindings = <
-                &kp Q               &kp W      &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSPC
-                &hm LEFT_CONTROL A   &kp S      &kp D       &kp F      &kp G       &kp H     &kp J      &kp K       &kp L        &kp ENTER
-                &mt LSHIFT Z           &kp X     &kp C       &kp V      &kp B        &kp N     &kp M      &kp COMMA     &kp PERIOD     &mt RSHIFT SLASH
+                AS(Q) AS(W) AS(E) AS(R) AS(T) AS(Y) AS(U) AS(I) AS(O) AS(P) AS(BSPC)
+                &hm LEFT_CONTROL A   AS(S) AS(D) AS(F) AS(G) AS(H) AS(J) AS(K) AS(L) &hm RIGHT_CONTROL ENTER
+                &mt LSHIFT Z           AS(X) AS(C) AS(V) AS(B) AS(N) AS(M) AS(COMMA) AS(PERIOD)  &mt RSHIFT SLASH
                 &none       &kp LGUI       &kp LALT         &lt LAY1 SPACE        &kp SPACE        &sl LAY2         &sl LAY3          &none
             >;
         };
 
         layer_1 {
             bindings = <
-                &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7    &kp N8    &kp N9     &kp N0     &kp DEL
-                &kp CAPS   &none  &kp SEMI  &kp APOS  &kp NUBS  &none  &none    &kp MINUS   &kp EQUAL  &trans
-                &trans     &none  &none     &none     &none     &none  &none   &kp LBKT    &kp RBKT   &trans
+                AS(N1) AS(N2) AS(N3) AS(N4) AS(N5) AS(N6) AS(N7) AS(N8) AS(N9) AS(N0) AS(DEL)
+                &kp CAPS   &none  AS(SEMI) AS(APOS) AS(NUBS)  &none  &none  AS(MINUS) AS(EQUAL)  &trans
+                &trans     &none  &none     &none     &none     &none  &none   AS(LBKT) AS(RBKT)   &trans
                 &none      &trans    &trans    &trans    &trans    &trans          &trans      &none
             >;
         };
