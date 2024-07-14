@@ -37,7 +37,6 @@
 		        require-prior-idle-ms = <0>;
 		        flavor = "tap-preferred";
                };
-
 		ly: layers {
                         compatible = "zmk,behavior-hold-tap";
                         label = "LAYERS TAP HOLD";
@@ -47,14 +46,13 @@
                         flavor = "tap-preferred";
                         bindings = <&mo>, <&to>;
                 };
-
-                sl: behavior_sticky_layer {
-			compatible = "zmk,behavior-sticky-key";
-			label = "STICKY_LAYER";
-			#binding-cells = <1>;
-			release-after-ms = <1000>;
-			bindings = <&mo>;
-			ignore-modifiers;
+	        /omit-if-no-ref/ sl: sticky_layer {
+	            compatible = "zmk,behavior-sticky-key";
+	            #binding-cells = <1>;
+	            release-after-ms = <1000>;
+	            bindings = <&mo>;
+	            quick-release;
+	            display-name = "Sticky Layer";
 		};
 	};
 };
