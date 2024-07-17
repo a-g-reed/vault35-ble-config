@@ -83,8 +83,8 @@
         layer_1 {
             bindings = <
                 &as LS(N1) N1 &as LS(N2) N2 &as LS(N3) N3 &as LS(N4) N4 &as LS(N5) N5 &as LS(N6) N6 &as LS(N7) N7 &as LS(N8) N8 &as LS(N9) N9 &as LS(N0) N0 &kp DEL
-                &kp CAPS   K_VOL_UP  &as LS(SEMI) SEMI &as LS(APOS) APOS &as LS(NUBS) NUBS  &none  &none  &as LS(MINUS) MINUS &as LS(EQUAL) EQUAL  &trans
-                &trans     K_VOL_DN  &none     &none     &none     &none  K_MUTE  &as LS(LBKT) LBKT &as LS(RBKT) RBKT   &trans
+                &kp CAPS   &kp K_VOL_UP  &as LS(SEMI) SEMI &as LS(APOS) APOS &as LS(NUBS) NUBS  &none  &none  &as LS(MINUS) MINUS &as LS(EQUAL) EQUAL  &trans
+                &trans     &kp K_VOL_DN  &none     &none     &none     &none  &kp K_MUTE  &as LS(LBKT) LBKT &as LS(RBKT) RBKT   &trans
                 &none      &trans    &trans    &trans    &trans    &trans          &trans      &none
             >;
         };
