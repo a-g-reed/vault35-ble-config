@@ -76,7 +76,7 @@
                 &as LS(Q) Q &as LS(W) W &as LS(E) E &as LS(R) R &as LS(T) T &as LS(Y) Y &as LS(U) U &as LS(I) I &as LS(O) O &as LS(P) P &kp BSPC
                 &hm LEFT_CONTROL A   &as LS(S) S &as LS(D) D &as LS(F) F &as LS(G) G &as LS(H) H &as LS(J) J &as LS(K) K &as LS(L) L &hm RIGHT_CONTROL ENTER
                 &mt LSHIFT Z          &as LS(X) X &as LS(C) C &as LS(V) V &as LS(B) B &as LS(N) N &as LS(M) M &as LS(COMMA) COMMA &as LS(PERIOD) PERIOD  &mt RSHIFT SLASH
-                &none       &kp LGUI       &kp LALT         &lt LAY1 SPACE        &kp SPACE        &sl LAY2         &sl LAY3          &none
+                &kp LGUI       &none       &kp LALT         &lt LAY1 SPACE        &kp SPACE        &sl LAY2         &none          &sl LAY3
             >;
         };
 
@@ -85,7 +85,7 @@
                 &as LS(N1) N1 &as LS(N2) N2 &as LS(N3) N3 &as LS(N4) N4 &as LS(N5) N5 &as LS(N6) N6 &as LS(N7) N7 &as LS(N8) N8 &as LS(N9) N9 &as LS(N0) N0 &kp DEL
                 &kp CAPS   &kp C_VOL_UP  &as LS(SEMI) SEMI &as LS(APOS) APOS &as LS(NUBS) NUBS  &none  &none  &as LS(MINUS) MINUS &as LS(EQUAL) EQUAL  &trans
                 &trans     &kp C_VOL_DN  &none     &none     &none     &none  &kp C_MUTE  &as LS(LBKT) LBKT &as LS(RBKT) RBKT   &trans
-                &none      &trans    &trans    &trans    &trans    &trans          &trans      &none
+                &trans      &none    &trans    &trans    &trans    &trans          &none      &trans
             >;
         };
 
@@ -94,7 +94,7 @@
                 &kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &none  &none  &none  &kp UP  &none  &none
                 &none      &kp F5  &kp F6  &kp F7  &kp F8  &none  &kp PSCRN   &kp LEFT  &kp RIGHT   &trans        
                 &trans     &kp F9  &kp F10  &kp F11  &kp F12  &none    &none   &kp DOWN  &none  &trans
-                &none      &trans    &trans    &trans    &trans    &trans          &trans      &none
+                &trans      &none    &trans    &trans    &trans    &trans          &none      &trans
             >;
         };
 
@@ -103,7 +103,7 @@
                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none &none &none &kp PG_UP &none &none
                 &bt BT_CLR    &out OUT_BLE  &out OUT_USB  &out OUT_TOG  &none         &none &none   &kp HOME  &kp END   &trans        
                 &bootloader   &none         &none         &none         &none         &none &none   &kp PG_DN &none &trans
-                &none      &trans    &trans    &trans    &trans    &trans          &trans      &none
+                &trans      &none    &trans    &trans    &trans    &trans          &none      &trans
             >;
         };
     };
